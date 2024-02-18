@@ -22,7 +22,7 @@ wss.on('connection', function connection(ws) {
 
   // Currently connected clients
   const numClients = wss.clients.size;
-  console.log('clients connected: ', numClients);
+  console.log('Clients connected: ', numClients);
 
   // Broadcast sends a message to everyone connected, function is defined at bottom of the file
   wss.broadcast(`Current visitors: ${numClients}`);
